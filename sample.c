@@ -10,10 +10,8 @@ void  main( )
 
 	printf("\n☆バブルソート☆\n");
 	printf("\nソート前\n");
-	for( i=0; i<MAX; i++ )
-	{
-		printf("%d ",data[i]);
-	}
+	showData();
+
 	printf("\n\n途中経過\n");
 	for( n=MAX; n>1; n-- )              // 未整列データ数
 	{
@@ -27,17 +25,19 @@ void  main( )
 				data[i+1]=w;
 			}
 		}
-		for( i=0; i<MAX; i++ )
-		{
-			printf("%d ",data[i]);
-		}
-		printf("\n");
+		showData();
 	}
+
 	printf("\nソート後\n");
+	showData();
+	fflush(stdout);
+}
+void showData( void )
+{
 	for( i=0; i<MAX; i++ )
 	{
 		printf("%d ",data[i]);
 	}
 	printf("\n");
-	fflush(stdout);
 }
+
