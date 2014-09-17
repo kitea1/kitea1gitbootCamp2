@@ -25,7 +25,7 @@ void  main( void )
 				w=data[i];
 				data[i]=data[i+1];
 				data[i+1]=w;
-				sFlag = 1;				// “ü‚ê‘Ö‚¦‚ª”­¶‚µ‚½
+				sFlag += 1;				// “ü‚ê‘Ö‚¦‚ª”­¶‚µ‚½
 			}
 		}
 		showData();
