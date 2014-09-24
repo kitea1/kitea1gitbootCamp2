@@ -34,6 +34,8 @@ void  main( void )
 			break;
 		}
 	}
+	;
+	
 
 	printf("\nÉ\Å[Égå„\n");
 	showData();
